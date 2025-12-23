@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+
+button {
+  color: rgba(255, 255, 255, 0.1);
+}
+
+button :hover {
+  color: black;
+}
