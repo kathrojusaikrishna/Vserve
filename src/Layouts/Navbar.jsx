@@ -13,14 +13,15 @@ const Navbar = () => {
 
     timeline.to(".Landing-h1", {
       opacity: 1,
-      duration: 2,
-      scale: 1.05,
+      duration: 1,
+      scale: 1.0,
       ease: "power1.inOut",
     });
 
     timeline.to(".Landing-h1", {
       opacity: 0,
       duration: 1,
+      display: "none",
       ease: "power1.out",
     });
 
@@ -30,7 +31,7 @@ const Navbar = () => {
       duration: 0.5,
       ease: "power2.inOut",
     });
-  });
+  }, []);
 
   return (
     <>
@@ -59,15 +60,6 @@ const Navbar = () => {
               </li>
               <li>
                 <NavLink
-                  to={"/get-support"}
-                  className={"Nav-links"}
-                  onClick={() => setActiveMenu(false)}
-                >
-                  Get Support
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
                   to={"/services"}
                   className={"Nav-links"}
                   onClick={() => setActiveMenu(false)}
@@ -75,6 +67,16 @@ const Navbar = () => {
                   Services
                 </NavLink>
               </li>
+              <li>
+                <NavLink
+                  to={"/get-support"}
+                  className={"Nav-links"}
+                  onClick={() => setActiveMenu(false)}
+                >
+                  Get Support
+                </NavLink>
+              </li>
+
               <li>
                 <NavLink
                   to={"/auth"}

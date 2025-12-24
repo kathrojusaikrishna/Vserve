@@ -1,0 +1,13 @@
+.category-blog {
+  height: 300px;
+  width: 340px;
+  margin: 1%;
+  border-radius: 2%;
+  background-color: rgba(195, 158, 232, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.category-blog:hover {
+  height: 300px;
+  width: 350px;
+}

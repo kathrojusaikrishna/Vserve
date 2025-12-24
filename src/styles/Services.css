@@ -1,0 +1,10 @@
+.service-category-blog {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 2;
+  justify-content: start;
+  align-items: center;
+  padding: 1rem;
+  gap: 0.7rem;
+  margin-bottom: 0.8rem;
+}
